@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Alert from "./components/Alert";
 import "./App.css";
+import Button from "./components/Button";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,18 +9,15 @@ function App() {
   return (
     <div className="App">
       <div className="button-components-section">
-        {/* ถ้าสร้าง Component ของ Buttons เสร็จแล้วให้ Uncomment โค้ดด้านล่าง เพื่อดูผลลัพธ์ */}
-        {/* <Button color="primary">Primary</Button>
-        <Button color="secondary">Secondary</Button> */}
+        <Button color="primary" text="Button Du"></Button>
+        <Button color="secondary" text="Button Frank"></Button>
       </div>
       <hr />
       <div className="alert-components-section">
-        {/* ถ้าสร้าง Component Alert เสร็จแล้วให้ Uncomment โค้ดด้านล่าง เพื่อดูผลลัพธ์ */}
-
-        <Alert severity="error">This is error alert box</Alert>
-        <Alert severity="warning">This is a warning alert box</Alert>
-        <Alert severity="info">This is an info alert box</Alert>
-        <Alert severity="success">This is a success alert box</Alert>
+        <Alert color="red" text="This is error alert box"></Alert>
+        <Alert color="orange" text="This is error alert box orange"></Alert>
+        <Alert color="yellow" text="This is error alert box yellow"></Alert>
+        <Alert color="green" text="This is error alert box green"></Alert>
       </div>
     </div>
   );
